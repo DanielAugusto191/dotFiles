@@ -11,6 +11,12 @@
 
 set $mod Mod4
 
+# Exec
+exec setxkbmap -model abnt2 -layout br
+exec xrandr --output DVI-I-1 --right-of VGA-1
+exec picom &
+exec nitrogen --restore
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 14
