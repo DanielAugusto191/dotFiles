@@ -3,7 +3,6 @@ general {
         colors = true
         interval = 1
 }
-
 order += "disk /"
 order += "memory"
 order += "tztime local"
@@ -19,6 +18,6 @@ memory {
 }
 
 disk "/" {
-        format = "%free"
+        format = "ArchLinux + I3WM - %free"
 }
 
