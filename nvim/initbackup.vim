@@ -25,18 +25,16 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'tanvirtin/monokai.nvim'
-Plug 'LexFrench/molokai-transparent'
 call plug#end()
 
 set completeopt=menu,menuone,noselect
+"Picom transparence"
+ hi Normal ctermbg=none
+ hi NonText ctermbg=none
+ hi LineNr ctermbg=none
 " Themes
 syntax enable
 colorscheme monokai
-
-highlight normal guibg=000000
-highlight nontext guibg=000000
-
-let g:molokai_transparent = 1
 
 lua <<EOF
   -- Set up nvim-cmp.

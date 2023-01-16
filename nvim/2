@@ -1,0 +1,63 @@
+" Config
+set mouse=a tabstop=4 shiftwidth=4 smarttab autoindent smartindent cindent showcmd number relativenumber encoding=utf8 t_Co=256 noswapfile splitbelow completeopt=menu,menuone,noselect
+
+" Keys
+inoremap ' ''<ESC>ha
+inoremap " ""<ESC>ha
+inoremap ( ()<ESC>ha
+inoremap [ []<ESC>ha
+inoremap { {}<ESC>ha
+
+" swap lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" Themes
+syntax enable
+
+" Comment lines with ,m and Uncomment with m,
+function! Comment()
+    let ext = tolower(expand('%:e'))
+    if ext == 'py' 
+        let cmt1 = "'''"
+        let cmt2 = "'''"   
+    elseif ext == 'cpp' || ext =='java' || ext == 'css' || ext == 'js' || ext == 'c' || ext =='cs' || ext == 'rs' || ext == 'go' || ext == "dfy"
+        let cmt1 = '/*'
+        let cmt2 = '*/'
+    elseif ext == 'sh'
+        let cmt1 = ":'"
+        let cmt2 = "'"
+    elseif ext == 'html'
+        let cmt1 = "<!--"
+        let cmt2 = "-->"
+    elseif ext == 'hs'
+        let cmt1 = "{-"
+        let cmt2 = "-}"
+    elseif ext == "rb"
+        let cmt1 = "=begin"
+        let cmt2 = "=end"
+    endif
+    exe line("'<")."normal O". cmt1 | exe line("'>")."normal o". cmt2 
+endfunction
+
+function! UnComment()
+    exe line("'<")."normal dd" | exe line("'>")."normal dd"   
+endfunction
+
+vnoremap ,m :<c-w><c-w><c-w><c-w><c-w>call Comment()<CR>
+vnoremap m, :<c-w><c-w><c-w><c-w><c-w>call UnComment()<CR>
+
+
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin()
+Plug 'junegunn/vim-easy-align'
+call plug#end()
