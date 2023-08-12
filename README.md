@@ -1,6 +1,6 @@
 # dotFiles
 Config and customization files.
-
+[OUT DATED]
 
 
 Desktop first screen, active windows have white borders, 10 inner gaps and -10 inner outer.

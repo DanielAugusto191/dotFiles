@@ -5,6 +5,7 @@ general {
 }
 order += "disk /"
 order += "memory"
+order += "ethernet enp3s0"
 order += "tztime local"
 
 tztime local {
@@ -17,6 +18,10 @@ memory {
         format_degraded = "MEMORY: %free"
 }
 
+ethernet enp3s0 {
+		format_up = "ON"
+		format_down = "OFF"
+}
 disk "/" {
         format = "ArchLinux + I3WM - %free"
 }
