@@ -1,0 +1,88 @@
+#!/usr/bin/env hush
+
+function printf(p) # sorry for this sin
+	std.print(p)
+end
+
+function check_args(args)
+	if std.len(args) < 1 or std.len(args) > 2 then
+		printf("Args Error!\n1 {path to install} | Install | ex: ./install.hsh 1 20230102 \n2 - Collect")
+		std.error("NOT OK", args)
+	end
+	if std.len(args) == 1 and args[0] == "1" then
+		printf("Error: you need to pass the directory where the config files that you want to install are!")
+		printf("Args Error!\n1 {path to install} | Install | ex: ./install.hsh 1 20230102 \n2 - Collect")
+		std.error("NOT OK", args)
+	end
+end
+
+function config(x, y, path)
+	let dir = ${whoami | tr -d "\n"}.stdout
+	dir = "/home/" ++ dir ++ "/.config"
+	{
+		mkdir -p $dir/$x;
+		mv $dir/$x/$y $dir/$x/backup;
+		cp ./$path/$x/$y $dir/$x/$y;
+	}
+
+end
+
+function install(path)
+	{ #bash
+		mv ~/.bashrc ~/.bashrc_backup;
+		cp $path/bash/dotbachrc ~/.bashrc;
+	}
+	{ #zsh
+		mv ~/.zshrc ~/.zshrc_backup;
+		cp ./$path/zsh/dotzshrc ~/.zshrc;
+	}
+	config("i3", "config", path)
+	config("i3status", "config", path)
+	config("nvim", "init.vim", path)
+	config("kitty", "kitty.conf", path)
+	config("picom", "picom.conf", path)
+	printf("Installed!")
+end
+
+function getconf(x, ndir)
+	let dir = ${whoami | tr -d "\n"}.stdout
+	dir = "/home/" ++ dir ++ "/.config"
+	{
+		cp -r $dir/$x/ ./$ndir/$x;
+	}
+end
+function collect()
+	let dir = ${
+		date +"%Y%m%d_%H%M%S" | tr -d "\n";
+	}
+	dir = dir.stdout
+	{
+		mkdir ./$dir;
+		mkdir $dir/bash;
+		cp ~/.bashrc $dir/bash/dotbachrc;
+		mkdir $dir/zsh;
+		cp ~/.zshrc $dir/zsh/dotzshrc;
+	}
+	getconf("i3", dir)
+	getconf("i3status", dir)
+	getconf("nvim", dir)
+	getconf("kitty", dir)
+	getconf("picom", dir)
+	printf("All files copied to " ++ dir ++ " folder!")
+end
+
+function run()
+	let args = std.args()
+	check_args(args)?
+
+	if(args[0] == "1") then
+		printf("Installing...")
+		install(args[1])?
+	else
+		printf("Collecting...")
+		collect()?
+	end
+
+end
+
+run()

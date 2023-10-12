@@ -9,10 +9,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="kafeitu"
 
+neofetch
 alias lock="i3lock -c 000000"
-alias nav="google-chrome-beta"
+alias nav="firefox"
 
-
+export PATH=$PATH:$HOME/llvm-project/build/bin
 
 autoload -Uz compinit promptinit
 compinit
@@ -77,7 +78,7 @@ promptinit
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nix-shell)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
