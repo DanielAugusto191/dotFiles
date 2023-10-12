@@ -1,5 +1,11 @@
 # dotFiles
 
+# Table of Content
+
+1. [Script to Config](https://github.com/DanielAugusto191/dotFiles/tree/new#script-to-config)
+2. [Images](https://github.com/DanielAugusto191/dotFiles/tree/new#images)
+3. [Installing Programs](https://github.com/DanielAugusto191/dotFiles/tree/new#installing-programs)
+4. [Some Configs](https://github.com/DanielAugusto191/dotFiles/tree/new#some-configs)
 
 # Script to Config
 My new config and custom files.
