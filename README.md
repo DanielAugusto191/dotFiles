@@ -88,6 +88,10 @@ Install [i3Status](https://archlinux.org/packages/community/x86_64/i3status/)
 Block screen
 Install [i3lock](https://github.com/i3/i3lock)
 
+## Vim-Plug
+Vim Plug
+Install [VimPlug](https://github.com/junegunn/vim-plug)
+
 ## Picom
 Transparency
 Install [Picom](https://archlinux.org/packages/?name=picom)
