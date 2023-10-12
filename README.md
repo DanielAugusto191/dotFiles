@@ -1,5 +1,7 @@
 # dotFiles
 
+![plot](./imgs/1.png)
+
 # Table of Content
 
 1. [Script to Config](https://github.com/DanielAugusto191/dotFiles/tree/new#script-to-config)
