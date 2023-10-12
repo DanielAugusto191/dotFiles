@@ -1,0 +1,86 @@
+#!/usr/bin/env hush
+
+function printf(p) # sorry for this sin
+	std.print(p)
+end
+
+function check_args(args)
+	if std.len(args) != 1 then
+		printf("Args Error!\n1-Install\n2-Collect")
+		std.error("NOT OK", args)
+	end
+end
+
+function config(x, y)
+	let dir = ${whoami | tr -d "\n"}.stdout
+	dir = "/home/" ++ dir ++ "/.config"
+	{
+		mkdir -p $dir/$x > /dev/null;
+		cp $dir/$x/$y $dir/$x/($y)_backup > /dev/null;
+		cp $x/$y $dir/$x/$y > /dev/null;
+	}
+
+end
+
+function install()
+	let dir = ${whoami | tr -d "\n"}.stdout
+	dir = "/home/" ++ dir ++ "/.config"
+	{ #bash
+		cp ~/.bashrc pwd/.bashrc_backup > /dev/null;
+		cp bash/dot_bashrc ~/.bashrc
+	}
+	{ #zsh
+		cp ~/.zshrc pwd/.zshrc_backup > /dev/null;
+		cp zsh/dot_zshrc ~/.zshrc
+	}
+	config("i3", "config")
+	config("i3status", "config")
+	config("nvim", "init.vim")
+	config("kitty", "kitty.conf")
+	config("picom", "picom.conf")
+
+end
+
+function getconf(x, ndir)
+	let dir = ${whoami | tr -d "\n"}.stdout
+	dir = "/home/" ++ dir ++ "/.config"
+	{
+		cp -r $dir/$x/ ./$ndir/$x;
+	}
+end
+function collect()
+	let dir = ${
+		date +"%Y%m%d_%H%M%S" | tr -d "\n";
+	}
+	dir = dir.stdout
+	{
+		mkdir ./$dir;
+		mkdir $dir/bash;
+		cp ~/.bashrc $dir/bash/dot_bachrc;
+		mkdir $dir/zsh;
+		cp ~/.zshrc $dir/zsh/dot_zshrc > /dev/null;
+	}
+	getconf("i3", dir)
+	getconf("i3status", dir)
+	getconf("nvim", dir)
+	getconf("kitty", dir)
+	getconf("picom", dir)
+end
+
+function run()
+	let args = std.args()
+	check_args(args)?
+
+	if(args[0] == 1) then
+		printf("Installing...")
+		install()?
+	else
+		printf("Collecting...")
+		collect()?
+	end
+
+
+
+end
+
+run()

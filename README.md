@@ -1,4 +1,11 @@
 # dotFiles
+
+NOTES:
+In high cunstomized enviroments, maybe the "~" is not setted make shure to set it.
+
+neofetch
+nitrogen
+
 Config and customization files.
 [OUT DATED]
 
