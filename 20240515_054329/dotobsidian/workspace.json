@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "1ab40ef5110a15f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "869a21db414201b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5274b1e011dc6992",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Study.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70217a3b155fb2e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IC/NOTAS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d92b55a95d650595",
+    "type": "split",
+    "children": [
+      {
+        "id": "02f4dd7f23b42fde",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bee478c517c9757",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a1bbb7e3a37a3ad5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e4ddf1dbe61d07ce",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "443a4f30c652f0da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "47b74f098bfc6ce6",
+    "type": "split",
+    "children": [
+      {
+        "id": "abfe8a92a378ed98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a822a10fe1d7e0d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "IC/NOTAS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5041f0e8d6ca5e95",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "IC/NOTAS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "269fa8a75f5a29e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "365bec1263b5db16",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "IC/NOTAS.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 653.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "70217a3b155fb2e9",
+  "lastOpenFiles": [
+    "TODO.md",
+    "Things to get good.md",
+    "Projecs.md",
+    "Study.md",
+    "English.md",
+    "Mathematica/Pasted image 20240512085701.png",
+    "Aprender.md",
+    "Archlinux Install.md",
+    "College list.md",
+    "CMakeLists.md",
+    "IC/NOTAS.md",
+    "IC/SSA.md",
+    "IC/Value Numbering.md",
+    "IC/wyvern.md",
+    "IC/Infos.md",
+    "IC/GSA phi-functions.md",
+    "Daily cost.md",
+    "Ferramentas.md",
+    "Filmes.md",
+    "Journal.md",
+    "Japanese.md",
+    "2024-1/Analise/Teoremas Fast.md",
+    "2024-1/Analise/Prova.md",
+    "Mathematica/Pasted image 20240419115812.png",
+    "Mathematica/Pasted image 20240419115617.png",
+    "Mathematica/Pasted image 20240419113540.png",
+    "Mathematica/Pasted image 20240419113209.png",
+    "Mathematica/Pasted image 20240419112850.png",
+    "Mathematica/Pasted image 20240419112434.png",
+    "Mathematica/Pasted image 20240419112403.png",
+    "Mathematica/Pasted image 20240419112339.png",
+    "Mathematica/Pasted image 20240419111621.png",
+    "2024-1/Analise/Caderno.md",
+    "2024-1/Analise/Untitled.md",
+    "2024-1/Analise/Drawing 2024-03-15 07.31.40.excalidraw.md",
+    "2024-1/Faltas.md",
+    "2024-1/Analise",
+    "2024-1",
+    "2023-2/Graphs/grafos.pdf",
+    "2023-2/Graphs/Untitled",
+    "2023-2/Cloud",
+    "2023-2/EDN",
+    "2023-2/Graphs/Exercises",
+    "Mathematica/EDN/a.c",
+    "Mathematica/EDN",
+    "Games/Backpack",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,52 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+#127.0.0.1 www.instagram.com
+#127.0.0.1 instagram.com
+#127.0.0.1 static.cdninstagram.com
+
+127.0.0.1 twitter.com
+127.0.0.1 api.twitter.com
+127.0.0.1 www.twitter.com
+127.0.0.1 https://twitter.com
+
+#127.0.0.1 twitch.tv
+#127.0.0.1 static.twitchcdn.net
+#127.0.0.1 static-cdn.jtvnw.net
+
+#127.0.0.1 www.facebook.com
+#127.0.0.1 api.facebook.com
+#
+127.0.0.1 v16a.tiktokcdn.com
+127.0.0.1 p16-tiktokcdn-com.akamaized.net
+127.0.0.1 log.tiktokv.com
+127.0.0.1 ib.tiktokv.com
+127.0.0.1 api-h2.tiktokv.com
+127.0.0.1 v16m.tiktokcdn.com
+127.0.0.1 api.tiktokv.com
+127.0.0.1 v19.tiktokcdn.com
+127.0.0.1 mon.musical.ly
+127.0.0.1 api2-16-h2.musical.ly
+127.0.0.1 api2.musical.ly
+127.0.0.1 log2.musical.ly
+127.0.0.1 api2-21-h2.musical.ly
+127.0.0.1 api-h2.tiktokv.com
+127.0.0.1 api.tiktokv.com
+127.0.0.1 api21-h2.tiktokv.com
+127.0.0.1 ib.tiktokv.com
+127.0.0.1 m.tiktok.com
+127.0.0.1 muscdn.com
+127.0.0.1 tiktokcdn.com
+127.0.0.1 tiktokcdn.com.c.worldfcdn.com
+127.0.0.1 (^|\.)muscdn\.com$
+127.0.0.1 (^|\.)musical\.ly$
+127.0.0.1 tiktok.com
+127.0.0.1 *.tiktok.com
+127.0.0.1 www.tiktok.com
+127.0.0.1 api-h2.tiktokv.com
+127.0.0.1 api21-h2.tiktokv.com
+127.0.0.1 ns-440.awsdns-55.com
+127.0.0.1 ns-722.awsdns-26.net
+127.0.0.1 ns-1475.awsdns-56.org
+127.0.0.1 ns-1574.awsdns-04.co.uk
+127.0.0.1 tiktokcdn-com.akamaized.net

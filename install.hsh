@@ -1,6 +1,6 @@
 #!/usr/bin/env hush
 
-function printf(p) # sorry for this sin
+function printf(p) # PRINTF sorry for this sin
 	std.print(p)
 end
 

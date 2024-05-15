@@ -1,0 +1,28 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 1
+}
+order += "disk /"
+order += "memory"
+order += "ethernet enp3s0"
+order += "tztime local"
+
+tztime local {
+        format = "%m-%d-%Y %H:%M:%S"
+}
+
+memory {
+        format = "%used"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
+}
+
+ethernet enp3s0 {
+		format_up = "ON"
+		format_down = "OFF"
+}
+disk "/" {
+        format = "ArchLinux + I3WM - %free"
+}
+

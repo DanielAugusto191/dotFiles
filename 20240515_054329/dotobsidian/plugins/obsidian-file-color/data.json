@@ -1,0 +1,92 @@
+{
+  "palette": [
+    {
+      "id": "ftiaAZ8d1SrGT2SgAdkAs",
+      "name": "Green",
+      "value": "#11ff00"
+    },
+    {
+      "id": "2F84XzKT-3b-u9ioqR9Y2",
+      "name": "",
+      "value": "#f50000"
+    },
+    {
+      "id": "DPw5tyD_--IugbmVFusPH",
+      "name": "",
+      "value": "#fff700"
+    },
+    {
+      "id": "pX2naTx2fkMioc-zp6LaK",
+      "name": "",
+      "value": "#00ccff"
+    },
+    {
+      "id": "6EjrvwsW8at88Vyev0ktH",
+      "name": "",
+      "value": "#000000"
+    },
+    {
+      "id": "PEVVo-dVizguw2vlRjl4f",
+      "name": "",
+      "value": "#ffffff"
+    },
+    {
+      "id": "ITxl-MxAtZ9maRP1CTswj",
+      "name": "",
+      "value": "#e100ff"
+    },
+    {
+      "id": "RNMRzoTgPA6fnJkw3xsMh",
+      "name": "",
+      "value": "#0011ff"
+    },
+    {
+      "id": "24B5jvxrZLgFePnu3BYZa",
+      "name": "",
+      "value": "#0a5700"
+    },
+    {
+      "id": "Kv6aE51SFtqG7QXPrUuQa",
+      "name": "",
+      "value": "#ff9500"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "2023-2/Graphs",
+      "color": "ftiaAZ8d1SrGT2SgAdkAs"
+    },
+    {
+      "path": "2023-2/Graphs/Revisao.md",
+      "color": "ftiaAZ8d1SrGT2SgAdkAs"
+    },
+    {
+      "path": "2023-2/Graphs/Exercises",
+      "color": "ftiaAZ8d1SrGT2SgAdkAs"
+    },
+    {
+      "path": "2023-2",
+      "color": "PEVVo-dVizguw2vlRjl4f"
+    },
+    {
+      "path": "2023-2/Cloud",
+      "color": "pX2naTx2fkMioc-zp6LaK"
+    },
+    {
+      "path": "2023-2/EDN",
+      "color": "DPw5tyD_--IugbmVFusPH"
+    },
+    {
+      "path": "2023-2/PO",
+      "color": "2F84XzKT-3b-u9ioqR9Y2"
+    },
+    {
+      "path": "2023-2/PO/Resumo.md",
+      "color": "2F84XzKT-3b-u9ioqR9Y2"
+    },
+    {
+      "path": "2023-2/Cloud/Resumo.md",
+      "color": "pX2naTx2fkMioc-zp6LaK"
+    }
+  ]
+}
