@@ -1,5 +1,0 @@
-require("config.plugins")
-require("config.config")
-require("config.lsp")
-require("config.keymap")
-require("config.symbols")
