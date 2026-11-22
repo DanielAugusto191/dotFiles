@@ -1,0 +1,4 @@
+- gdu intead of du for faster disk analysis.
+- ripgrep instead of grep for faster searching through files.
+- fzf instead of find for fuzzy searching through files and directories.
+

@@ -1,5 +1,7 @@
 # Dotfiles
 
+![Desktop wallpaper](wallpapers/header.jpg)
+
 Personal configuration files for my Linux desktop and development environment.
 
 ## What is included

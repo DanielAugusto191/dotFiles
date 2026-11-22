@@ -1,0 +1,289 @@
+Tools and applications
+=======================
+
+This is a curated list of programs installed on my system. It focuses on
+programs that are useful to reinstall or remember, rather than every system
+library and hardware dependency.
+
+Desktop and window management
+-----------------------------
+
+sway
+    Wayland tiling compositor and replacement for i3.
+
+waybar
+    Customizable status bar for Sway and other wlroots compositors.
+
+mako
+    Lightweight notification daemon for Wayland.
+
+kitty
+    GPU-accelerated terminal emulator with tabs, layouts, and custom keybindings.
+
+picom
+    X11 compositor used for transparency and visual effects.
+
+fastfetch
+    Displays system, hardware, desktop, and operating-system information.
+
+dmenu
+    Simple application launcher and menu for X11.
+
+i3-wm
+    Previous X11 tiling window manager configuration.
+
+i3lock
+    Screen locker for X11 sessions.
+
+i3status
+    Status generator previously used with i3bar.
+
+swaybg
+    Wallpaper utility for Wayland compositors.
+
+redshift
+    Adjusts screen color temperature according to the time of day.
+
+gnome-clocks
+    Clock, alarm, stopwatch, and timer application.
+
+pavucontrol
+    Graphical PulseAudio volume and device mixer.
+
+pulsemixer
+    Terminal-based PulseAudio mixer.
+
+xfce4-screenshooter
+    Graphical screenshot utility.
+
+maim
+    Command-line screenshot utility for X11.
+
+xclip
+    Command-line access to the X11 clipboard.
+
+
+Web and communication
+---------------------
+
+firefox
+    Open-source web browser.
+
+brave-bin
+    Chromium-based browser with built-in ad and tracker blocking.
+
+google-chrome
+    Google Chrome web browser.
+
+discord
+    Voice, video, and text communication application.
+
+curseforge
+    Mod and add-on manager for supported games.
+
+nordvpn-bin
+    NordVPN command-line client.
+
+nordvpn-gui
+    Graphical interface for NordVPN.
+
+Development tools
+-----------------
+
+neovim
+    Extensible terminal editor used as the main editor in this setup.
+
+vim
+    Classic modal text editor.
+
+zsh
+    Interactive shell used by the desktop environment.
+
+zsh-syntax-highlighting
+    Adds syntax highlighting to Zsh commands.
+
+git
+    Distributed version-control system.
+
+openssh
+    SSH client and server tools for remote access and file transfer.
+
+clang
+    C and C++ compiler frontend from LLVM.
+
+ccache
+    Compiler cache that speeds up repeated C and C++ builds.
+
+cmake
+    Cross-platform build-system generator.
+
+ninja
+    Fast build system commonly used with CMake.
+
+boost
+    Collection of portable C++ libraries and development headers.
+
+doxygen
+    Documentation generator for C, C++, Java, and other languages.
+
+gdb
+    The GNU debugger, if installed separately.
+
+go
+    Go programming-language compiler and toolchain.
+
+jre-openjdk
+    Java runtime environment.
+
+npm
+    JavaScript and Node.js package manager.
+
+uv
+    Fast Python package manager and project tool.
+
+python-yaml
+    Python bindings for reading and writing YAML.
+
+opam
+    Package manager for OCaml.
+
+dune
+    Build system for OCaml projects.
+
+zola
+    Static site generator written in Rust.
+
+docker
+    Tool for building and running containerized applications.
+
+virtualbox
+    Desktop virtualization software.
+
+Command-line utilities
+----------------------
+
+ripgrep
+    Fast recursive text search tool, used as an alternative to grep.
+
+fd
+    Simple and fast alternative to find.
+
+fzf
+    Interactive fuzzy finder for files, commands, and text.
+
+bat
+    cat replacement with syntax highlighting and Git integration.
+
+htop
+    Interactive process and resource monitor.
+
+dust
+    Human-friendly disk-usage viewer.
+
+gdu
+    Fast terminal disk-usage analyzer.
+
+s-tui
+    Terminal stress test and hardware monitoring tool.
+
+termdown
+    Terminal countdown timer and stopwatch.
+
+tmux
+    Terminal multiplexer for persistent sessions and split panes.
+
+unzip
+    Utility for extracting ZIP archives.
+
+yay
+    Pacman wrapper and AUR helper.
+
+flatpak
+    Sandboxed application packaging and distribution system.
+
+System and hardware utilities
+-----------------------------
+
+cpu-x
+    Displays CPU, motherboard, memory, and hardware information.
+
+hardinfo2
+    System information and benchmarking tool.
+
+radeontop
+    Monitors AMD GPU utilization.
+
+mangohud
+    On-screen performance overlay for FPS, temperatures, CPU, and GPU load.
+
+networkmanager
+    Network connection manager and user utilities.
+
+bluez
+    Bluetooth protocol stack for Linux.
+
+bluez-utils
+    Bluetooth command-line utilities.
+
+efibootmgr
+    Tool for managing UEFI boot-manager entries.
+
+grub
+    Bootloader for Linux systems.
+
+sudo
+    Allows permitted users to run commands with elevated privileges.
+
+Fonts and display support
+-------------------------
+
+ttf-firacode-nerd
+    Fira Code font with programming ligatures and Nerd Font symbols.
+
+noto-fonts
+    General-purpose Unicode font family.
+
+noto-fonts-cjk
+    Noto fonts for Chinese, Japanese, and Korean text.
+
+noto-fonts-emoji
+    Color emoji font.
+
+nordzy-cursors
+    Nord-style mouse cursor theme.
+
+Audio, video, and media
+-----------------------
+
+audacity
+    Editor and recorder for digital audio.
+
+obs-studio
+    Open-source application for screen recording and live streaming.
+
+vlc
+    General-purpose multimedia player.
+
+imv
+    Lightweight image viewer for Wayland and X11.
+
+libreoffice-still
+    Office suite for documents, spreadsheets, and presentations.
+
+xournalpp
+    Handwriting and PDF annotation application.
+
+retroarch
+    Frontend for running games through libretro cores.
+
+pcsx2
+    PlayStation 2 emulator.
+
+steam
+    Game distribution platform and game launcher.
+
+proton-ge-custom-bin
+    Custom Proton compatibility layer for running Windows games on Linux.
+
+minecraft-launcher
+    Official Minecraft launcher.

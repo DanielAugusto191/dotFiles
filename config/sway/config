@@ -26,18 +26,12 @@ input "type:keyboard" {
 }
 
 # Exec
-# exec --no-startup-id setxkbmap -model br-abnt2 -layout br
-# exec --no-startup-id xset r rate 200 40
 exec --no-startup-id pavucontrol
 exec --no-startup-id waybar
 exec --no-startup-id gnome-clocks
-# exec --no-startup-id discord
 exec --no-startup-id obsidian
-# exec --no-startup-id google-chrome-stable --wm-window-animations-disabled
 exec --no-startup-id redshift -P -O 7500
 exec --no-startup-id mako
-# exec --no-startup-id picom --backend glx -b
-#exec --no-startup-id nitrogen --restore
 exec_always swaybg -i ~/wallpapers/brother.jpg -m fill
 
 seat * xcursor_theme Nordzy-cursors 36

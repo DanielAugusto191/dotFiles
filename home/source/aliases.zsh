@@ -14,4 +14,20 @@ alias cls="printf '\033c'"
 alias poe='cd "$HOME/.steam/steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile"'
 alias cnvim='cd "$HOME/.config/nvim/lua" && nvim'
 alias cmlir='cd "$HOME/workspace/cppSandbox/mlir"'
-alias fzf="fzf --style full --preview 'cat {}' --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+alias fzf="fzf --height=80% --layout=reverse --border --multi --preview 'bat --style=numbers --color=always --line-range :500 {}' --bind 'ctrl-/:toggle-preview'"
+
+# Fuzzy-find files while respecting .gitignore and previewing the selection.
+ff() {
+  fd --type f --hidden --exclude .git | fzf --height=80% --layout=reverse --border \
+    --preview 'bat --style=numbers --color=always --line-range :500 {}' \
+    --bind 'ctrl-/:toggle-preview'
+}
+
+# Fuzzy-find a file and open it in Neovim.
+fedit() {
+  local file
+  file=$(fd --type f --hidden --exclude .git | fzf --height=80% --layout=reverse --border \
+    --preview 'bat --style=numbers --color=always --line-range :500 {}' \
+    --bind 'ctrl-/:toggle-preview')
+  [ -n "$file" ] && nvim "$file"
+}
