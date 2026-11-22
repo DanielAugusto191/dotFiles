@@ -1,0 +1,25 @@
+# OS/editor/runtime files
+.DS_Store
+*.swp
+*.swo
+*~
+nohup.out
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.kdbx
+
+# Application state and caches
+.cache/
+config/**/Cache/
+config/**/GPUCache/
+config/**/IndexedDB/
+config/**/Local\ Storage/
+config/**/Session\ Storage/
+config/**/Cookies*
+
