@@ -1,0 +1,63 @@
+System summary
+==============
+
+This file describes the machine used to create these dotfiles. It is meant as
+a quick reference when reinstalling the system.
+
+Operating system
+----------------
+
+Distribution: Arch Linux
+Architecture: x86_64
+Kernel: Linux 7.2.8-arch1-2
+Shell: Zsh 5.9.2
+Window manager: Sway on Wayland
+Locale: C.UTF-8
+
+Hardware
+--------
+
+Motherboard: B550MH 3.0
+CPU: AMD Ryzen 7 5700X 8-Core Processor
+CPU layout: 8 cores, 16 threads
+Maximum reported CPU frequency: approximately 4.67 GHz
+GPU: NVIDIA GeForce RTX 5060
+RAM: 32 GiB
+Swap: approximately 32 GiB total across the configured swap partitions
+
+Storage
+-------
+
+NVMe drive: approximately 1 TB
+  - EFI system partition: 2 GiB
+  - Swap partition: approximately 30 GiB
+  - Main ext4 partition: approximately 900 GiB
+
+Additional drive: approximately 1 TB
+  - EFI partition: 1 GiB
+  - Swap partition: 30 GiB
+  - ext4 partition: approximately 585 GiB
+  - NTFS partitions: approximately 278 GiB total
+
+Displays
+--------
+
+HDMI-A-1: 1920x1080
+DP-2: 1920x1080
+
+Software overview
+-----------------
+
+Package managers:
+  - pacman
+  - yay
+  - Flatpak
+
+Main desktop tools:
+  - Sway
+  - Waybar
+  - Mako
+  - Kitty
+  - Neovim
+  - Fastfetch
+  - Picom for X11 compatibility

@@ -113,7 +113,8 @@ window#waybar {
 
 
 /* Common module styling with border-bottom */
-#mode, #mpd, #custom-weather, #custom-playerctl, #clock, #cpu,
+#mode, #mpd, #custom-weather, #custom-playerctl, #custom-internet,
+#custom-gpu-temperature, #custom-disk, #clock, #cpu,
 #memory, #temperature, #battery, #network, #pulseaudio,
 #backlight, #disk, #custom-uptime, #custom-updates, #custom-quote,
 #idle_inhibitor, #tray {
@@ -239,6 +240,16 @@ window#waybar {
     border-bottom-color: @network-disconnected-color;
 }
 
+#custom-internet {
+    color: @network-color;
+    border-bottom-color: @network-color;
+}
+
+#custom-gpu-temperature {
+    color: @temperature-color;
+    border-bottom-color: @temperature-color;
+}
+
 #pulseaudio {
     color: @pulseaudio-color;
     border-bottom-color: @pulseaudio-color;
@@ -255,6 +266,11 @@ window#waybar {
 }
 
 #disk {
+    color: @disk-color;
+    border-bottom-color: @disk-color;
+}
+
+#custom-disk {
     color: @disk-color;
     border-bottom-color: @disk-color;
 }
