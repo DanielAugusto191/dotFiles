@@ -1,6 +1,6 @@
 # Dotfiles
 
-![Desktop wallpaper](wallpapers/header.jpg)
+![Desktop wallpaper](wallpapers/brotherbear-04-740x315.jpg)
 
 Personal configuration files for my Linux desktop and development environment.
 
