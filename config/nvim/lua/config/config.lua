@@ -3,7 +3,7 @@ vim.cmd([[
   set textwidth=80 autoread shiftwidth=2 mouse=a smarttab showcmd number  encoding=utf8 t_Co=256 noswapfile splitbelow cursorline completeopt=menu,menuone,noselect syntax=true termguicolors colorcolumn=81 foldmethod=manual relativenumber smartindent autoindent linebreak
 
   set rtp^="$HOME/.opam/default/share/ocp-indent/vim"
-  set clipboard+=unnamedplus
+  set clipboard=unnamedplus
 
   let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'julia', 'vim', 'rust', 'sml', 'c', 'cpp', 'typescript', 'javascript', 'go', 'c++=cpp']
 

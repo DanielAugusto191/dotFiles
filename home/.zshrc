@@ -4,8 +4,9 @@ source "$HOME/.config/dotfiles/source/env.zsh"
 source "$HOME/.config/dotfiles/source/aliases.zsh"
 
 ZSH_THEME="kafeitu"
-plugins=(git)
+plugins=(fzf zsh-autosuggestions)
 autoload -Uz compinit promptinit
+[[ -d /usr/share/zsh/site-functions ]] && fpath=(/usr/share/zsh/site-functions $fpath)
 compinit
 promptinit
 

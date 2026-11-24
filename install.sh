@@ -28,13 +28,14 @@ backup_and_link "$REPO_DIR/home/.clangd" "$HOME/.clangd"
 backup_and_link "$REPO_DIR/home/.clang-format" "$HOME/.clang-format"
 backup_and_link "$REPO_DIR/home/source" "$HOME/.config/dotfiles/source"
 
-for name in kitty sway nvim mako picom waybar fastfetch; do
+for name in kitty sway nvim mako picom waybar fastfetch terminal-lyrics; do
   backup_and_link "$REPO_DIR/config/$name" "$HOME/.config/$name"
 done
 backup_and_link "$REPO_DIR/config/notify" "$HOME/.config/notify"
 
 mkdir -p "$HOME/.local/bin"
 backup_and_link "$REPO_DIR/bin/usdbrl-status.sh" "$HOME/.local/bin/usdbrl-status.sh"
+backup_and_link "$REPO_DIR/bin/bluetoothBattery.sh" "$HOME/.local/bin/bluetoothBattery.sh"
 
 printf '\nInstallation complete.\n'
 if [ -d "$BACKUP_DIR" ]; then

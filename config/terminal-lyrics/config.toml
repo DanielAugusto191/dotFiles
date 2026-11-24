@@ -1,0 +1,14 @@
+# Follow the Chromium MPRIS player, regardless of its changing instance number.
+player = "chromium"
+
+# Show complete phrases instead of one word at a time.
+word_by_word = false
+
+# The lyrics were arriving about one second late.
+offset_ms = 0
+
+font = "mini"
+
+network = true
+show_source = true
+show_title = true

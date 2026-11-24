@@ -4,14 +4,16 @@
     "height": 10,
     "spacing": 1,
     "margin": 0,
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/weather"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
         "modules-center": [],                                                                           //battery   //disk     // uptime      //updates        // systray
-    "modules-right": ["custom/internet", "cpu", "memory", "temperature", "custom/gpu-temperature", "custom/disk", "pulseaudio", "clock"],
+    "modules-right": ["custom/internet", "custom/bluetooth-battery", "cpu", "memory", "temperature", "custom/gpu-temperature", "custom/disk", "pulseaudio", "custom/date", "clock"],
 
 
     "sway/workspaces": {
         "disable-scroll": false,
-        "all-outputs": true,
+        "disable-scroll-wraparound": true,
+        "enable-bar-scroll": true,
+        "all-outputs": false,
         "format": "{name}",
         "format-icons": {
             "1": "󰖟",
@@ -47,17 +49,26 @@
         "on-click-right": "playerctl next",
     },
 
-    "custom/weather": {
-        "exec": "curl 'https://wttr.in/?format=1'",
-        "interval": 3600,
-        "format": "{}",
-        "tooltip": true
-    },
-
     "custom/internet": {
         "exec": "curl -fsS --connect-timeout 2 --max-time 4 https://www.cloudflare.com/cdn-cgi/trace >/dev/null && echo ON || echo OFF",
         "interval": 10,
         "format": "󰖩 {}",
+        "tooltip": false,
+        "return-type": "text"
+    },
+
+    "custom/bluetooth-battery": {
+        "exec": "$HOME/.local/bin/bluetoothBattery.sh",
+        "interval": 60,
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true
+    },
+
+    "custom/date": {
+        "exec": "date '+%Y-%m-%d'",
+        "interval": 30,
+        "format": "󰃮 {}",
         "tooltip": false,
         "return-type": "text"
     },
@@ -71,7 +82,7 @@
     },
 
     "custom/disk": {
-        "exec": "df -h --output=used,size / | tail -n1 | awk '{print $1 \"/\" $2}'",
+        "exec": "df -h --output=avail,size / | tail -n1 | awk '{print $1 \"/\" $2}'",
         "interval": 30,
         "format": "󰋊 {}",
         "tooltip": false,
@@ -103,7 +114,7 @@
     },
 
     "clock": {
-        "format": "󰥔 {:%Y-%m-%d %H:%M}",
+        "format": "󰥔 {:%H:%M}",
         "format-alt": "󰃮 {:%Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "calendar": {

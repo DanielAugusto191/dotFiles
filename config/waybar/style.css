@@ -114,7 +114,7 @@ window#waybar {
 
 /* Common module styling with border-bottom */
 #mode, #mpd, #custom-weather, #custom-playerctl, #custom-internet,
-#custom-gpu-temperature, #custom-disk, #clock, #cpu,
+#custom-gpu-temperature, #custom-disk, #custom-date, #clock, #cpu,
 #memory, #temperature, #battery, #network, #pulseaudio,
 #backlight, #disk, #custom-uptime, #custom-updates, #custom-quote,
 #idle_inhibitor, #tray {
@@ -126,7 +126,7 @@ window#waybar {
 
 /* Workspaces styling */
 #workspaces button {
-    padding: 0 10px;
+    padding: 0 18px;
     background-color: transparent;
     color: @workspaces-color;
     margin: 0;
@@ -188,6 +188,11 @@ window#waybar {
 #clock {
     color: @clock-color;
     border-bottom-color: @clock-color;
+}
+
+#custom-date {
+    color: @cyan;
+    border-bottom-color: @cyan;
 }
 
 #cpu {

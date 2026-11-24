@@ -3,7 +3,15 @@ return {
 	{ "numToStr/Comment.nvim" },
 	-- {'Thiago4532/mdmath.nvim'},
 	{ "RaafatTurki/hex.nvim" },
-	{ "Julian/lean.nvim" },
+	{
+		"Julian/lean.nvim",
+		ft = { "lean" },
+		opts = {
+			mappings = true,
+			abbreviations = { enable = true },
+			infoview = { autoopen = true },
+		},
+	},
 
 	{ "meanderingprogrammer/render-markdown.nvim" },
 	{ "williamboman/mason.nvim" },

@@ -4,6 +4,7 @@ trash() { mv -- "$@" /tmp; }
 alias img='kitty +kitten icat'
 alias arm='trash'
 alias sway='sway --unsupported-gpu'
+alias startx='sway --unsupported-gpu'
 alias lock='i3lock -c 000000'
 alias open='xdg-open'
 alias nav='google-chrome-stable'
@@ -31,3 +32,6 @@ fedit() {
     --bind 'ctrl-/:toggle-preview')
   [ -n "$file" ] && nvim "$file"
 }
+
+alias lyrics='lyrics --player "$(playerctl -l | fzf)"'
+alias headset-connect='bluetoothctl power on && bluetoothctl connect 41:42:F0:E3:A8:26'
